@@ -1,1 +1,69 @@
+1. Rust is a compiled, statically typed language originally developed by Mozilla. Its main goal is to let you write fast software while preventing common bugs, especially memory-related ones.
+2. Why Rust is Special.
+--> Memory Safety Without a Garbage Collector
 
+Most languages choose one:
+C/C++ → fast, but unsafe.
+Java / Python → safe, but slower due to garbage collection
+
+👉 Rust gives you both:
+No garbage collector
+Memory safety enforced at compile time
+
+This is done using Rust’s ownership system.
+====================================================================
+--> Ownership, Borrowing, and Lifetimes (Core Ideas)
+
+These rules ensure memory safety:
+Ownership: Every value has one owner.
+Borrowing: You can have references, but with strict rules
+Lifetimes: The compiler checks that references never outlive data
+
+This prevents:
+Null pointer dereferences
+Use-after-free bugs
+Data races
+===================================================================
+--> Extremely Fast Performance
+
+Rust performance is comparable to C and C++ because:
+It compiles to native machine code
+There’s no runtime overhead
+
+That’s why it’s used in:
+Operating systems, Game engines, Browsers
+===================================================================
+--> Fearless Concurrency
+
+Rust makes multi-threading safer by design:
+Data races are compile-time errors
+Thread safety is enforced by the type system
+
+This makes concurrent code much more reliable.
+==================================================================
+--> Great Tooling
+
+Rust comes with excellent built-in tools:
+cargo – package manager & build system
+rustfmt – automatic code formatting
+clippy – smart linter
+rustup – toolchain manager
+===============================================================
+
+What Is Rust Used For?
+
+Systems programming (OS kernels, drivers)
+Web backends (using frameworks like Actix or Axum)
+Command-line tools
+Game engines
+Blockchain & crypto
+Embedded devices
+WebAssembly (Wasm)
+
+Companies using Rust include Mozilla, Microsoft, Google, Amazon, Discord, and Cloudflare.
+================================================================
+
+
+
+
+Embedded systems
